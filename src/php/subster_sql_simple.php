@@ -16,6 +16,12 @@ require('subster.php');
  * phase 3: positional parameter replacement, tracking order and placement of '?'
  *   delimiters example {{:baz}}
  *
+ * @param $sql     what we're doing substitution on
+ * @param $map     assoc array mapping keys to values
+ * @param $options options
+ *
+ * @return string with replacements
+ *
  */
 function subster_sql_simple($sql, $map, $options=false) {
 

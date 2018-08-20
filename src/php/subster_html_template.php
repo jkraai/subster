@@ -15,6 +15,12 @@ require('subster.php');
  *   delimiters example {{:bar}}
  * ? phase 3: inversion for native code execution
  *
+ * @param $doc     what we're doing substitution on
+ * @param $map     assoc array mapping keys to values
+ * @param $options optional array with opening and closing strings
+ *
+ * @return string with replacements
+ *
  */
 function subster_html_template($doc, $map, $options=0) {
 

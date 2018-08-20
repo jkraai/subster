@@ -23,6 +23,12 @@ require('subster.php');
  *   - handy for INSERT AND UPDATE statements, for example
  *   delimiters example {{:baz}}
  *
+ * @param $sql     what we're doing substitution on
+ * @param $map     assoc array mapping keys to values
+ * @param $options optional array with opening and closing strings
+ *
+ * @return string with replacements
+ *
  */
 function subster_sql($sql, $map, $options) {
 
